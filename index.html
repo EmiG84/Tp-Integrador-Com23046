@@ -20,16 +20,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                     <li class="nav-item ">
-                        <a class="nav-link active " aria-current="page" href="#" >La conferencia</a>
+                        <a class="nav-link active " aria-current="page" href="#conferencia" >La conferencia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Los oreadores</a>
+                        <a class="nav-link" href="#oradores">Los oreadores</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">El lugar y la fecha</a>
+                        <a class="nav-link" href="#lugaryfecha">El lugar y la fecha</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Conviértete en orador</a>
+                        <a class="nav-link" href="#seorador">Conviértete en orador</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-success" href="#">Comprar tickets</a>
@@ -38,7 +38,7 @@
           </div>
         </div>
     </nav>
-    <div>
+    <div id="conferencia">
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -51,6 +51,7 @@
                     <img src="img/ba3.jpg" class="d-block w-100" alt="...">
                 </div>
             </div>
+            <!--
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
@@ -59,7 +60,9 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
+            -->
         </div>
+  <!--
         <div class="card text-end float-end" style="width: 34rem;">
             <div class="card-body">
                 <h1 class="card-title">Conf Bs As</h1>
@@ -72,49 +75,115 @@
                 </div>
             </div>
         </div>
-    </div> 
+   -->
+    </div>
+    <div id="oradores" class="container py-4">
+        <div>
+            <h5 class="text-center">Conoce a los</h5>
+            <h1 class="text-center">ORADORES</h1>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/steve.jpg" class="card-img-top" alt="Steve Jobs foto">
+                    <div class="card-body">
+                        <div class="badge bg-warning text-wrap text-black" style="width: 6rem;">
+                            JavaScript
+                        </div>
+                        <div class="badge bg-info text-wrap" style="width: 6rem;">
+                            React
+                        </div>
+                        <h5 class="card-title">Steve Jobs</h5>
+                        <p class="card-text">TLorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Quod eius, officia sequi, molestiae earum dicta cumque qui amet quae animi 
+                            unde aspernatur ex ab magnam commodi dolore vel quidem eaque!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/bill.jpg" class="card-img-top" alt="Bill Gates foto">
+                    <div class="card-body">
+                        <div class="badge bg-warning text-wrap text-black" style="width: 6rem;">
+                                JavaScript
+                        </div>
+                        <div class="badge bg-info text-wrap" style="width: 6rem;">
+                                React
+                        </div>
+                        <h5 class="card-title">Bill Gates</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Quod eius, officia sequi, molestiae earum dicta cumque qui amet quae animi 
+                            unde aspernatur ex ab magnam commodi dolore vel quidem eaque!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/ada.jpeg" class="card-img-top" alt="Ada Lovelace foto">
+                    <div class="card-body">
+                        <div class="badge bg-secondary text-wrap text-light" style="width: 6rem;">
+                            Negocios
+                        </div>
+                        <div class="badge bg-danger text-wrap text-light" style="width: 6rem;">
+                            Startups
+                        </div>
+                        <h5 class="card-title">Ada Lovelace</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Quod eius, officia sequi, molestiae earum dicta cumque qui amet quae animi 
+                            unde aspernatur ex ab magnam commodi dolore vel quidem eaque!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="lugaryfecha" class="bg-dark"> 
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+                <img src="img/honolulu.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="pt-4 col text-light">
+                <h3>Bs As - Octubre</h3>
+                <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu
+                    es la más sureña de ente las principales ciudades estadounidenses. Anque el nombre de Honolulu se refiere al 
+                    área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una 
+                    ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km² de superficie).
+                </p>  <!-- Alt + 253 para elevar al cuadrado -->
+                <div class= container-fluid>
+                    <a href="#" class="btn btn-outline-light">Conocé más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="seorador" class="container py-4">
+        <div>
+            <h6 class="text-center">CONVIÉRTETE EN UN</h6>
+            <h1 class="text-center">ORADOR</h1>
+            <P class="text-center">Anótate como orador para dar una 
+                <span style="text-decoration: underline dotted">charla ignite.</span> 
+                Cuéntanos de qué quieres hablar!</P>
+        </div>
+        <form class="row g-3 justify-content-center ">
+            <div class="col-md-4">
+                <input type="text" class="form-control" id="inputNombre" placeholder="Nombre">
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="form-control" id="inputApellido" placeholder="Apellido">
+            </div>
+            <div class="col-8">                
+                <textarea class="form-control" aria-label="With textarea" id="inputTemaCharla" placeholder="Sobre qué quieres hablar?"></textarea>
+                <p class="text-secondary">Recuerda incluir un título para tu charla</p>
+            </div>
+            
+            <div class="col-8">
+                <button type="submit" class="btn btn-success col-12">Enviar</button>
+            </div>
+        </form>
+    </div>
+    <footer>
+
+        
+    </footer>
 
 <script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>
-
-<!-- La conferencia + Carousel 
-    <main style="border-style: solid;">
-        
-    </main>
--->
-
-<!-- Los oreadores
-    <article style="border-style: solid;">   
-        <p>Conoce a</p>
-        <h2>ORADORES</h2>        
-    </article>
--->
-
-<!-- El lugar y la fecha
-    <article style="border-style: solid;"> 
-        <div>
-            <img src="img/honolulu.jpg" alt="" width="50%">
-        </div>
-        <div>
-            <h3>Bs As - Octubre</h3>
-            <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu
-                es la más sureña de ente las principales ciudades estadounidenses. Anque el nombre de Honolulu se refiere al 
-                área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una 
-                ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km² de superficie).
-            </p>  Alt + 253 para elevar al cuadrado 
-        </div>
-    </article>
--->
-
-<!-- Conviértete en orador
-    <article style="border-style: solid;"> 
-
-    </article>
--->
-
-<!-- Menu Nav
-    <footer style="border-style: solid;"> 
-    
-    </footer>
--->    
