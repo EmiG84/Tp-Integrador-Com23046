@@ -63,12 +63,6 @@ formulario.addEventListener('submit', function (event){
 
 
 
-/*
-catTickets.addEventListener('select', function(e){
-    datosTicket.catTickets = e.target.value;
-    console.log(e.target.value);
-});
-*/
 
 
 
