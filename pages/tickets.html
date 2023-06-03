@@ -9,7 +9,7 @@
     <title>Comprar tickets</title>
 </head>
 <body>
-    <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark"> <!-- fixed-top -->
+    <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>          
@@ -64,13 +64,12 @@
 
     </div>
 
-    <div id="compTickets" class="container py-4">
-
+    <div class="container py-4">
         <div>
             <h6 class="text-center">VENTA</h6>
             <h1 class="text-center">VALOR DE TICKET $200 </h1>
         </div>
-        <form class="row g-3 justify-content-center ">
+        <form id="compTickets" class="row g-3 justify-content-center ">
             <div class="col-md-5">
                 <input type="text" class="form-control" id="inputNombre" placeholder="Nombre">
             </div>
@@ -81,33 +80,30 @@
                 <input type="email" class="form-control" id="inputEmail" placeholder="Correo">
             </div>
             <div class="col-md-5">
-                <p>Cantidad</p>
+                <label for="inputCantidad"> Cantidad</label>
                 <input type="text" class="form-control" id="inputCantidad" placeholder="Cantidad">
             </div>
             <div class="col-md-5">
-                <p>Categoria</p>
-                <select class="form-control">
-                    <option selected class="text-muted">Elija una categoria...</option>
-                    <option>Estudiante</option>
-                    <option>Trainee</option>
-                    <option>Junior</option>
+                <label for="categoriaTicket"> Categoria</label>
+                <select class="form-control" id="categoriaTicket" onchange="ShowSelected()" >
+                    <option selected class="text-muted" value="0">Elija una categoria...</option>
+                    <option value=".20">Estudiante</option>
+                    <option value=".50">Trainee</option>
+                    <option value=".85">Junior</option>
                   </select>
-                <!-- <input type="text" class="form-control" id="inputCategoria" placeholder="Categoria"> -->
             </div>
-            <div class="col-md-10 rounded" style="background-color: #addfe7" >                
-                <p>Total a Pagar $</p>
+            <div class="container row col-md-10 rounded mt-3" style="background-color: #addfe7" >                
+                <p class=" m-0 p-2 fs-5 col-md-12">Total a Pagar $ <span id="totalPago">0</span></p>
             </div>
 
             <div class="col-md-5">
-                <button type="submit" class="btn btn-success col-12">Borrar</button>
+                <button type="button" class="btn btn-success col-12" onclick="limpiarFormulario()">Borrar</button>
             </div>
             <div class="col-md-5">
                 <button type="submit" class="btn btn-success col-12">Resumen</button>
             </div>
         </form>
-
     </div>
-
    <footer class="text-center text-white" style="background-color: #1f626e">
         <div class="row align-items-center d-flex justify-content-center">
             <div class="col-md-2 p-2 m-4">
@@ -133,6 +129,7 @@
             </div>          
         </div>
     </footer>
+<script src="../js/ticket.js"></script>
 <script src="../js/bootstrap.bundle.js"></script>
 </body>
 </html>
