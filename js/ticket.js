@@ -13,33 +13,36 @@ const apellido = document.querySelector('#inputApellido');
 const email = document.querySelector('#inputEmail');
 const cantTickets = document.querySelector('#inputCantidad');
 const catTickets = document.querySelector('#categoriaTicket');
-const formulario = document.querySelector('#compTickets');
+const resumenCompra = document.querySelector('#compTickets');
 
 // GUARDO LOS ELEMENTOS EN EL OBJETO
 
 nombre.addEventListener('input', function(e){
     datosTicket.nombre = e.target.value;
-    console.log(e.target.value);
+    apellido.disabled = false;
 });
 
 apellido.addEventListener('input', function(e){
     datosTicket.apellido = e.target.value;
-    console.log(e.target.value);
+    //console.log(e.target.value);
+    email.disabled = false;
 });
 
 email.addEventListener('input', function(e){
     datosTicket.email = e.target.value;
-    console.log(e.target.value);
+    //console.log(e.target.value);
+    cantTickets.disabled = false;
 });
 
 cantTickets.addEventListener('input', function(e){
     datosTicket.cantTickets = e.target.value;
-    console.log(e.target.value);
+    //console.log(e.target.value);
+    catTickets.disabled = false;
 });
 
 catTickets.addEventListener('change', function(){ 
     eleccion = catTickets.options[catTickets.options.selectedIndex].text;
-    console.log(eleccion);
+    //console.log(eleccion);
 }); 
 
 function ShowSelected(){
@@ -49,19 +52,15 @@ function ShowSelected(){
     return document.getElementById("totalPago").innerHTML = total;
 };
 
+
 function limpiarFormulario() {
     document.getElementById("compTickets").reset();
     document.getElementById("totalPago").innerHTML = '0';
+    apellido.disabled = true;
+    email.disabled = true;
+    cantTickets.disabled = true;
+    catTickets.disabled = true;
   }
-
-
-//VALIDAR Y ENVIAR FORMULARIO
-
-formulario.addEventListener('submit', function (event){
-
-});
-
-
 
 
 
