@@ -71,21 +71,21 @@
         </div>
         <form id="compTickets" class="row g-3 justify-content-center ">
             <div class="col-md-5">
-                <input type="text" class="form-control" id="inputNombre" placeholder="Nombre">
+                <input type="text" class="form-control" id="inputNombre" placeholder="Nombre" minlength="3" maxlength="26" required autofocus>
             </div>
             <div class="col-md-5">
-                <input type="text" class="form-control" id="inputApellido" placeholder="Apellido">
+                <input type="text" class="form-control" id="inputApellido" placeholder="Apellido" minlength="3" maxlength="15" disabled required>
             </div>
             <div class="col-md-10">                
-                <input type="email" class="form-control" id="inputEmail" placeholder="Correo">
+                <input type="email" class="form-control" id="inputEmail" placeholder="Correo" disabled required>
             </div>
             <div class="col-md-5">
                 <label for="inputCantidad"> Cantidad</label>
-                <input type="text" class="form-control" id="inputCantidad" placeholder="Cantidad">
+                <input type="text" class="form-control" id="inputCantidad" placeholder="Cantidad" disabled>
             </div>
             <div class="col-md-5">
                 <label for="categoriaTicket"> Categoria</label>
-                <select class="form-control" id="categoriaTicket" onchange="ShowSelected()" >
+                <select class="form-control" id="categoriaTicket"  disabled> <!--onchange="ShowSelected()"-->
                     <option selected class="text-muted" value="0">Elija una categoria...</option>
                     <option value=".20">Estudiante</option>
                     <option value=".50">Trainee</option>
@@ -100,7 +100,7 @@
                 <button type="button" class="btn btn-success col-12" onclick="limpiarFormulario()">Borrar</button>
             </div>
             <div class="col-md-5">
-                <button type="submit" class="btn btn-success col-12">Resumen</button>
+                <button type="button" class="btn btn-success col-12" onclick="ShowSelected()">Resumen</button>
             </div>
         </form>
     </div>
